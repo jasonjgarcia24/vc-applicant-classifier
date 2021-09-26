@@ -1,0 +1,13 @@
+.
+├── data
+│   ├── applicants_data.csv
+│   ├── applicants_data.h5
+│   ├── applicants_data_A1.h5
+│   ├── applicants_data_A2.h5
+│   └── applicants_data_A3.h5
+├── img
+│   └── neural-network-model-accuracy-report.png
+├── LICENSE
+├── README.md
+├── tree.txt
+└── venture_funding_with_deep_learning.ipynb

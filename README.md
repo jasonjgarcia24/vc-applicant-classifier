@@ -1,5 +1,4 @@
 # Welcome to the Venture Capital (VC) Applicant Classifier Project!
-#### Forecasting with Facebook Prophet
 ***
 ## Cotents<a id="Contents">
 [Project Description](#Project-Description)<br>
@@ -23,22 +22,17 @@ This project provides venture capital firms with deep learning models for predic
 The layout of this project is show below.<br>
 .<br>
 ├── data<br>
-│   ├── google_hourly_search_trends.csv<br>
-│   ├── mercado_daily_revenue.csv<br>
-│   └── mercado_stock_price.csv<br>
-├── forecasting_net_prophet.ipynb<br>
+│   ├── applicants_data.csv<br>
+│   ├── applicants_data.h5<br>
+│   ├── applicants_data_A1.h5<br>
+│   ├── applicants_data_A2.h5<br>
+│   └── applicants_data_A3.h5<br>
 ├── img<br>
-│   ├── mercadolibre-daily-revenue.png<br>
-│   ├── mercadolibre-hourly-stock-price.png<br>
-│   ├── mercadolibre-hourly-trends-day-of-week.png<br>
-│   ├── mercadolibre-hourly-trends-week-of-year.png<br>
-│   ├── mercadolibre-predicted-daily-revenue.png<br>
-│   ├── mercadolibre-predicted-stock-price.png<br>
-│   ├── mercadolibre-trends-daily-revenue.png<br>
-│   └── mercadolibre-trends-stock-price.png<br>
+│   └── neural-network-model-accuracy-report.png<br>
 ├── LICENSE<br>
 ├── README.md<br>
-└── tree.txt<br>
+├── tree.txt<br>
+└── venture_funding_with_deep_learning.ipynb<br>
 
 ***
 ## <a id="Technologies-Resources">Technologies and Resources</a>
@@ -53,45 +47,16 @@ The layout of this project is show below.<br>
 ***
 ## <a id="Installation-Guide">Installation Guide</a>
 ### Project Installation
-To install <a href="https://github.com/jasonjgarcia24/net-profit-forcasting.git" title="https://github.com/jasonjgarcia24/net-profit-forcasting.git">net-profit-forcasting</a>, type <code>git clone https://github.com/jasonjgarcia24/net-profit-forcasting.git</code> into bash in your prefered local directory.<br><br>
-Alternatively, you can navigate to the same address (<code>https://github.com/jasonjgarcia24/net-profit-forcasting.git</code>) and download the full <code>main</code> branch's contents as a zip file to your prefered local directory.<br>
+To install <a href="https://github.com/jasonjgarcia24/vc-applicant-classifier.git" title="https://github.com/jasonjgarcia24/vc-applicant-classifier.git">vc-applicant-classifier</a>, type <code>git clone https://github.com/jasonjgarcia24/vc-applicant-classifier.git</code> into bash in your prefered local directory.<br><br>
+Alternatively, you can navigate to the same address (<code>https://github.com/jasonjgarcia24/vc-applicant-classifier.git</code>) and download the full <code>main</code> branch's contents as a zip file to your prefered local directory.<br>
 
 ## <a id="Usage">Usage</a>
-Observe net-profit-forcasting with <code>forecasting_net_prophet.ipynb</code>. No input variables are required.<br>
+Observe vc-applicant-classifier with <code>venture_funding_with_deep_learning.ipynb</code>. No input variables are required.<br>
 
 ### Outputs
 This tool provides several visualizations for both MercadoLibre Google traffic and sales performance analysis:
-1. Hourly Google traffic trends by day of week and hour:<br>
-<img src="img/mercadolibre-hourly-trends-day-of-week.png" title="MercadoLibre Hourly Trends by Day of Week"><br>
-This heatmap allows us to measure the distribution of Google traffic trends for MercadoLibre.<br>
-
-2. Hourly Google traffic trends by week of year:<br>
-<img src="img/mercadolibre-hourly-trends-week-of-year.png" title="MercadoLibre Hourly Trends by Week of Year"><br>
-This plot allows us to identify periods throughout the year of high and low traffic for MercadoLibre.<br>
-    
-3. Hourly stock price for the past five years:<br>
-<img src="img/mercadolibre-hourly-stock-price.png" title="MercadoLibre Hourly Stock Price"><br>
-This plot allows us to view the overall trend in MercadoLibre's stock prices over the past five years.<br>
-    
-4. Predicted stock price:<br>
-<img src="img/mercadolibre-predicted-stock-price.png" title="MercadoLibre Predicted Stock Price"><br>
-This plot reflects the Facebook Prophet prediction of MercadoLibre's expected stock price with both best and worst case ranges.<br>
-    
-5. Hourly, daily, weekly, and monthly treding MercadoLibre stock prices:<br>
-<img src="img/mercadolibre-trends-stock-price.png" title="MercadoLibre Trending Stock Price"><br>
-This plot provides an overall short- and long-term trends of MercadoLibre's stock price.<br>
-    
-6. Total daily revenue:<br>
-<img src="img/mercadolibre-daily-revenue.png" title="MercadoLibre Daily Revenue"><br>
-This plot is a general review of MercadoLibre's overall daily revenue for the past year and a half.<br>
-    
-7. Daily, weekly, and monthly trending daily revenue:<br>
-<img src="img/mercadolibre-trends-daily-revenue.png" title="MercadoLibre Trending Daily Revenue"><br>
-This plot is allows us to view the short- and long-term trends of MercadoLibre's daily revenue.<br>
-    
-8. Predicted daily revenue:<br>
-<img src="img/mercadolibre-predicted-daily-revenue.png" title="MercadoLibre Trending Daily Revenue"><br>
-This plot reflects the Facebook Prophet prediction of MercadoLibre's expected daily revenue for 2020 Q3.<br>
+Deep learning model accuracy reports are generated for each customized approach:<br>
+<img src="img/neural-network-model-accuracy-report.png" title="Model accuracy report"><br>
 
 ***
 ## <a id="Contributors">Contributors</a>
@@ -99,7 +64,7 @@ Currently just me :)<br>
 
 ***
 ## <a id="License">License</a>
-Each file included in this repository is licensed under the <a href="https://github.com/jasonjgarcia24/net-profit-forcasting/blob/c95b7c4ebcb37ac7e5f2f91505f7e796137f99eb/LICENSE" title="LICENSE">MIT License.</a>
+Each file included in this repository is licensed under the <a href="https://github.com/jasonjgarcia24/vc-applicant-classifier/blob/53dc9a508bf8f1a1b34fc2a086ef9d2e3a293d8b/LICENSE" title="LICENSE">MIT License.</a>
 
 ***
 [Top of Page](#Top-of-Page)<br>
